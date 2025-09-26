@@ -2,7 +2,7 @@
 
 This repository contains the implementation of **RepSim**, a novel hybrid adversarial framework introduced in our paper **"The Asymmetric Vulnerability: Bypassing LLM Defenses via Guardrail-Model Mismatch"**. 
 
-## 🔬 Research Overview
+## 🔬 Research Overview 
 
 ### Key Innovation
 
