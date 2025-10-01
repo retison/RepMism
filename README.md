@@ -1,6 +1,6 @@
-# RepSim: The Asymmetric Vulnerability Framework
+# RepMism: The Asymmetric Vulnerability Framework
 
-This repository contains the implementation of **RepSim**, a novel hybrid adversarial framework introduced in our paper **"The Asymmetric Vulnerability: Bypassing LLM Defenses via Guardrail-Model Mismatch"**. 
+This repository contains the implementation of **RepMism**, a novel hybrid adversarial framework introduced in our paper **"The Asymmetric Vulnerability: Bypassing LLM Defenses via Guardrail-Model Mismatch"**. 
 
 ## 🔬 Research Overview 
 
@@ -9,12 +9,12 @@ This repository contains the implementation of **RepSim**, a novel hybrid advers
 Our work reveals a critical architectural vulnerability in multi-component LLM security systems: the **representational divergence** between input-side guardrails and sophisticated core LLMs creates a fundamental security gap. 
 
 <div align="center">
-<img src="figures/Figure1.png" alt="RepSim vs Conventional Attacks" width="70%">
+<img src="figures/Figure1.png" alt="RepMism vs Conventional Attacks" width="70%">
 <br>
-<em>Figure 1: Comparison of RepSim with conventional explicit and implicit jailbreak attacks in the guard–LLM pipeline</em>
+<em>Figure 1: Comparison of RepMism with conventional explicit and implicit jailbreak attacks in the guard–LLM pipeline</em>
 </div>
 
-We introduce **RepSim** - a hybrid adversarial framework that systematically exploits this asymmetry through:
+We introduce **RepMism** - a hybrid adversarial framework that systematically exploits this asymmetry through:
 
 - **Intention-preserving character injection** with hierarchical scheduling
 - **Chain-of-thought hijacking** via safety continuation mechanisms  
@@ -33,21 +33,21 @@ We introduce **RepSim** - a hybrid adversarial framework that systematically exp
 ### Method Overview
 
 <div align="center">
-<img src="figures/Figure4.png" alt="RepSim Pipeline" width="80%">
+<img src="figures/Figure4.png" alt="RepMism Pipeline" width="80%">
 <br>
-<em>Figure 2: Overall pipeline of RepSim: initialization via CoT hijacking, hierarchical character perturbation with safety continuation, and iterative optimization</em>
+<em>Figure 2: Overall pipeline of RepMism: initialization via CoT hijacking, hierarchical character perturbation with safety continuation, and iterative optimization</em>
 </div>
 
 ## 📊 Experimental Results
 
 ### Attack Success Rate (ASR) Comparison
 
-Our comprehensive evaluation across 200 harmful prompts demonstrates RepSim's overwhelming effectiveness:
+Our comprehensive evaluation across 200 harmful prompts demonstrates RepMism's overwhelming effectiveness:
 
 | Method | GPT-4o | GPT-o3 | DeepSeek-r1 | Gemini-2.5 |
 |--------|--------|--------|-------------|------------|
 | AutoRAN | 44-94% | 19-47% | 53-99.5% | 47.5-98% |
-| **RepSim** | **87.5-99%** | **81.5-92.5%** | **94.5-100%** | **92-100%** |
+| **RepMism** | **87.5-99%** | **81.5-92.5%** | **94.5-100%** | **92-100%** |
 
 ### Key Findings
 
@@ -61,7 +61,7 @@ Our comprehensive evaluation across 200 harmful prompts demonstrates RepSim's ov
 <div align="center">
 <img src="figures/Figure6.png" alt="Score Distribution Comparison" width="70%">
 <br>
-<em>Figure 3: Score distribution of generated responses under unguarded and guarded settings: RepSim maintains high attack quality compared to AutoRAN</em>
+<em>Figure 3: Score distribution of generated responses under unguarded and guarded settings: RepMism maintains high attack quality compared to AutoRAN</em>
 </div>
 
 ## 🚀 Usage Instructions
@@ -131,7 +131,7 @@ export LLAMA_GUARD_MODEL_PATH="./models/Meta-Llama-Guard-2-8B"
 # ... other model paths
 ```
 
-### Step 5: Run RepSim
+### Step 5: Run RepMism
 
 ```bash
 # Basic usage
